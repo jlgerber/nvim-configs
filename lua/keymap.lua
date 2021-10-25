@@ -21,5 +21,8 @@ kmap('n', '<C-j>', '<C-w>j', nrmp)
 kmap('n', '<C-k>', '<C-w>k', nrmp)
 kmap('n', '<C-l>', '<C-w>l', nrmp)
 
+-- shift when in visual mode
+kmap('v', '<', '<gv', nrmp)
+kmap('v', '>', '>gv', nrmp)
 -- open nvim-tree 
 kmap('n', '<Leader>e', ':NvimTreeToggle<CR>', nrmp)
