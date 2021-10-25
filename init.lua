@@ -4,7 +4,9 @@
 --
 -- global configuraiton
 -- vim.o.nvim_tree_ignore = {'.git', '.idea' }
-vim.g.nvim_tree_quit_on_open = 1 
+
+-- using NvimTreeToggle command to show/hide tree instead of auto closing
+-- vim.g.nvim_tree_quit_on_open = 1 
 vim.g.nvim_tree_highlight_opened_files = 1 
 
 require('plugins')

@@ -22,4 +22,4 @@ kmap('n', '<C-k>', '<C-w>k', nrmp)
 kmap('n', '<C-l>', '<C-w>l', nrmp)
 
 -- open nvim-tree 
-kmap('n', '<Leader>e', ':NvimTreeOpen<CR>', nrmp)
+kmap('n', '<Leader>e', ':NvimTreeToggle<CR>', nrmp)
