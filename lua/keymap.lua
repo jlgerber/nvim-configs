@@ -4,7 +4,7 @@
 local kmap = vim.api.nvim_set_keymap
 local nrmp = {noremap = true, silent = true}
 
--- set jk to alias the esc command so that I don't have to type esc 
+-- I hate having to press escape. use jk  
 kmap('i', 'jk', '<esc>', nrmp)
 
 -- set up space to be a noop then set a mapleader of space
@@ -21,8 +21,31 @@ kmap('n', '<C-j>', '<C-w>j', nrmp)
 kmap('n', '<C-k>', '<C-w>k', nrmp)
 kmap('n', '<C-l>', '<C-w>l', nrmp)
 
+-- Window Resizing
+--
+kmap('n', '<C-Up>', ':resize -2<CR>', nrmp)
+kmap('n', '<C-Down>', ':resize +2<CR>', nrmp)
+kmap('n', '<C-Left>', ':vertical resize -2<CR>', nrmp)
+kmap('n', '<C-Right>', ':vertical resize +2<CR>', nrmp)
+
+kmap('n', '<S-C-Up>', ':resize -10<CR>', nrmp)
+kmap('n', '<S-C-Down>', ':resize +10<CR>', nrmp)
+kmap('n', '<S-C-Left>', ':vertical resize -10<CR>', nrmp)
+kmap('n', '<S-C-Right>', ':vertical resize +10<CR>', nrmp)
+
+
 -- shift when in visual mode
 kmap('v', '<', '<gv', nrmp)
 kmap('v', '>', '>gv', nrmp)
+
 -- open nvim-tree 
 kmap('n', '<Leader>e', ':NvimTreeToggle<CR>', nrmp)
+
+-- Tab switch buffer
+kmap('n', '<TAB>', ':bnext<CR>', nrmp)
+kmap('n', '<S-TAB>', 'bprevious<CR>', nrmp)
+
+-- Move selected line / block of text in visual mode up or down
+kmap('x', 'K', ':move \'<-2<CR>gv-gv\'', nrmp)
+kmap('x', 'J', ':move \'>+1<CR>gv-gv\'', nrmp)
+
