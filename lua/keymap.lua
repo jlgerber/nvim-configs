@@ -21,6 +21,12 @@ kmap('n', '<C-j>', '<C-w>j', nrmp)
 kmap('n', '<C-k>', '<C-w>k', nrmp)
 kmap('n', '<C-l>', '<C-w>l', nrmp)
 
+kmap('t', '<C-h>', '<C-\\><C-n><C-w>h', nrmp)
+kmap('t', '<C-j>', '<C-\\><C-n><C-w>j', nrmp)
+kmap('t', '<C-k>', '<C-\\><C-n><C-w>k', nrmp)
+kmap('t', '<C-l>', '<C-\\><C-n><C-w>l', nrmp)
+
+
 -- Window Resizing
 --
 kmap('n', '<C-Up>', ':resize -2<CR>', nrmp)

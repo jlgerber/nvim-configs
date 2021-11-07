@@ -25,3 +25,4 @@ vim.g.nvim_tree_highlight_opened_files = 1
 require('plugins')
 require('keymap')
 require('nv-compe')
+require('settings')

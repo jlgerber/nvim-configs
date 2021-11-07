@@ -33,4 +33,9 @@ return require('packer').startup(function()
      }
   use 'neovim/nvim-lspconfig'
   use 'hrsh7th/nvim-compe'
+  use 'scrooloose/nerdcommenter'
+  use 'vim-airline/vim-airline'
+  use 'tpope/vim-fugitive'
+  use 'hrsh7th/vim-vsnip'
+  use 'hrsh7th/vim-vsnip-integ'
 end)
