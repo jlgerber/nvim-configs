@@ -23,4 +23,4 @@ utils.opt('w', 'relativenumber', true)
 utils.opt('o', 'clipboard', 'unnamed,unnamedplus')
 
 -- highlight on yank
-vim.cmd 'au TextYankPost * lua vim.highight.on_yank {on_visual = false}'
+vim.cmd 'au TextYankPost * lua vim.highlight.on_yank {on_visual = false}'
