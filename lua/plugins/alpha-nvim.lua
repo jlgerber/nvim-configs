@@ -254,6 +254,7 @@ l__j__jl_____j \___/   \_/  |____jl___j___j
             dashboard.button('f', '  Find file', ':cd $HOME | silent Telescope find_files hidden=true no_ignore=true <CR>'),
             dashboard.button('t', '  Find text', ':Telescope live_grep <CR>'),
             dashboard.button('r', '󰄉  Recent files', ':Telescope oldfiles <CR>'),
+            dashboard.button('s', '󰄉  Restore Session for Current Directory', '<cmd>SessionRestore<CR>'),
             dashboard.button('u', '󱐥  Update plugins', '<cmd>Lazy update<CR>'),
             dashboard.button('c', '  Settings', ':e $HOME/.config/nvim/init.lua<CR>'),
             dashboard.button('p', '  Projects', ':e $HOME/src <CR>'),
