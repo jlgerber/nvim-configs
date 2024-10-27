@@ -19,13 +19,15 @@ keymap.set("n", "<leader>-", "<C-x>", { desc = "Decrement number" })
 keymap.set("n", "<leader>wv", "<C-w>v", { desc = "Split window vertically" })
 keymap.set("n", "<leader>wh", "<C-w>s", { desc = "Split window horizontally" })
 keymap.set("n", "<leader>we", "<C-w>=", { desc = "Make splits equal size" })
-keymap.set("n", "<leader>w_", "<C-w>_", { desc = "Max out the current buffer's height" })
-keymap.set("n", "<leader>w-", "<C-w>|", { desc = "Max out the current buffer's width" })
+-- Commenting out since we have vim-maximizer plugin
+-- keymap.set("n", "<leader>w_", "<C-w>_", { desc = "Max out the current buffer's height" })
+-- keymap.set("n", "<leader>w-", "<C-w>|", { desc = "Max out the current buffer's width" })
 keymap.set("n", "<leader>wx", "<cmd>close<CR>", { desc = "Close current split" })
 keymap.set("n", "<leader>wk", ":only<CR>", { desc = "Close other windows" })
 keymap.set("n", "<leader>wp", "<C-w>w", { desc = "Navigate to previous window" })
 keymap.set("n", "<leader>wn", "<C-w>W", { desc = "Navigate to next window" })
 keymap.set("n", "<leader>wr", "<C-w>r", { desc = "Rotate windows" })
+-- Plugin vim-maximizer used to toggle current buffer to maximize size via <leader>wm
 -- Tab Management
 keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" })
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" })
