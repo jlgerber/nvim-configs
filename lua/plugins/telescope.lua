@@ -10,7 +10,9 @@ return {
             vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = "Find Files" })
             -- leader == " " as you can see from above
             -- To use grep you can simply type <space>fg and you will be able to grep through the project
+            vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = "Find Files" })
             vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = "Live Grep" })
+            vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = "Telescope buffers" })
         end
     },
     -- telescope-ui-select plugin
