@@ -275,7 +275,22 @@ l__j__jl_____j \___/   \_/  |____jl___j___j
           callback = function()
             local stats = require('lazy').stats()
             local ms = math.floor(stats.startuptime * 100 + 0.5) / 100
-            dashboard.section.footer.val = { ' ', ' ', ' ', ' Loaded ' .. stats.count .. ' plugins  in ' .. ms .. ' ms ' }
+            dashboard.section.footer.val = { ' ', ' ', ' ', 
+                    ' Loaded ' .. stats.count .. ' plugins  in ' .. ms .. ' ms ', 
+                    ' ',
+                    'Hotkeys to Remember',
+                    ' ',
+                    'gx - open a url under the mouse in a browser',
+                    'gc - toggle highlighted region using linewise comment',
+                    'gb - toggle highlighted region using blockwise comment',
+                    'ysiw) - surround word with parens',
+                    'jk - exit insert mode (like <ESC> )',
+                    '<leader>nh - clear search highlights',
+                    '<leader>w<letter> - window operations',
+                    '<leader>t<letter> - tab operations',
+                    '<leader>bn - next buffer',
+                    '<leader>bp - previous buffer'
+            }
             dashboard.section.header.opts.hl = 'DashboardFooter'
             pcall(vim.cmd.AlphaRedraw)
           end,
