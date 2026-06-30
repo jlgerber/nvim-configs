@@ -46,6 +46,12 @@ foo bar bla 1 2 3 value
 foo_bar-bla 2-3-3 = value
 foo.bar.bla 1.2.3 value
 ```
+## Paging Forward and Back
+
+We can move forward or back a page at a time.
+
+- `<C-f>` - Move forward one page 
+- `<C-b>` - Move back one page
 
 ## Current Line Navigation
 
@@ -56,3 +62,18 @@ Nvim has various ways of navigating on the current line:
 - `g`    - Go to the last non-blank char in the current line 
 - `$`    - Go to the last char in the current line
 - `<N>|` - Go to the column `N` in the current line
+
+## Line Navigation
+
+- `gg`    - go to the beginning of the file 
+- `:0`    - go to the beginning of the file 
+- `G`     - go to the end of the file
+- `:$`    - go to the end of the file
+- `:<N>`  - go to the provided line number
+- `<N>gg` - go to the provided line number 
+- `<N>G`  - go to the provided line number
+
+## Showing Matches in the mini line 
+
+If you type `:h` and then start a command, you can hit `tab` to
+cycle through options.
